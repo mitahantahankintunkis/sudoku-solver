@@ -1,0 +1,690 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GridButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://themes/main.theme" type="Theme" id=2]
+[ext_resource path="res://NumberButton.tscn" type="PackedScene" id=3]
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BoardContainer" type="CenterContainer" parent="HBoxContainer"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+size_flags_vertical = 5
+
+[node name="Background" type="ColorRect" parent="HBoxContainer/BoardContainer"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/BoardContainer"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 597.0
+margin_bottom = 597.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 9
+
+[node name="GridButton" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton2" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_right = 132.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton3" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_right = 198.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton6" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_right = 264.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton5" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_right = 330.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton4" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_right = 396.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton9" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_right = 462.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton8" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_right = 528.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton7" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_right = 594.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton18" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 66.0
+margin_right = 66.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton17" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 66.0
+margin_right = 132.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton16" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 66.0
+margin_right = 198.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton15" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 66.0
+margin_right = 264.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton14" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 66.0
+margin_right = 330.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton13" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 66.0
+margin_right = 396.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton12" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 66.0
+margin_right = 462.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton11" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 66.0
+margin_right = 528.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton10" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 66.0
+margin_right = 594.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton27" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 132.0
+margin_right = 66.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton26" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 132.0
+margin_right = 132.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton25" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 132.0
+margin_right = 198.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton24" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 132.0
+margin_right = 264.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton23" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 132.0
+margin_right = 330.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton22" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 132.0
+margin_right = 396.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton21" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 132.0
+margin_right = 462.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton20" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 132.0
+margin_right = 528.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton19" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 132.0
+margin_right = 594.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton54" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 198.0
+margin_right = 66.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton53" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 198.0
+margin_right = 132.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton52" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 198.0
+margin_right = 198.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton51" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 198.0
+margin_right = 264.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton50" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 198.0
+margin_right = 330.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton49" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 198.0
+margin_right = 396.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton48" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 198.0
+margin_right = 462.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton47" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 198.0
+margin_right = 528.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton46" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 198.0
+margin_right = 594.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton45" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 264.0
+margin_right = 66.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton44" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 264.0
+margin_right = 132.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton43" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 264.0
+margin_right = 198.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton42" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 264.0
+margin_right = 264.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton41" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 264.0
+margin_right = 330.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton40" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 264.0
+margin_right = 396.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton39" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 264.0
+margin_right = 462.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton38" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 264.0
+margin_right = 528.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton37" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 264.0
+margin_right = 594.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton36" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 330.0
+margin_right = 66.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton35" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 330.0
+margin_right = 132.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton34" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 330.0
+margin_right = 198.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton33" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 330.0
+margin_right = 264.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton32" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 330.0
+margin_right = 330.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton31" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 330.0
+margin_right = 396.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton30" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 330.0
+margin_right = 462.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton29" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 330.0
+margin_right = 528.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton28" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 330.0
+margin_right = 594.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton81" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 396.0
+margin_right = 66.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton80" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 396.0
+margin_right = 132.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton79" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 396.0
+margin_right = 198.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton78" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 396.0
+margin_right = 264.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton77" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 396.0
+margin_right = 330.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton76" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 396.0
+margin_right = 396.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton75" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 396.0
+margin_right = 462.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton74" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 396.0
+margin_right = 528.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton73" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 396.0
+margin_right = 594.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton72" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 462.0
+margin_right = 66.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton71" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 462.0
+margin_right = 132.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton70" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 462.0
+margin_right = 198.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton69" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 462.0
+margin_right = 264.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton68" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 462.0
+margin_right = 330.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton67" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 462.0
+margin_right = 396.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton66" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 462.0
+margin_right = 462.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton65" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 462.0
+margin_right = 528.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton64" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 462.0
+margin_right = 594.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton63" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_top = 528.0
+margin_right = 66.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton62" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 66.0
+margin_top = 528.0
+margin_right = 132.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton61" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 132.0
+margin_top = 528.0
+margin_right = 198.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton60" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_top = 528.0
+margin_right = 264.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton59" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 264.0
+margin_top = 528.0
+margin_right = 330.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton58" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 330.0
+margin_top = 528.0
+margin_right = 396.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton57" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 396.0
+margin_top = 528.0
+margin_right = 462.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton56" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 462.0
+margin_top = 528.0
+margin_right = 528.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="GridButton55" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
+margin_left = 528.0
+margin_top = 528.0
+margin_right = 594.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="SettingsContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 600.0
+margin_right = 800.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/SettingsContainer"]
+margin_right = 200.0
+margin_bottom = 14.0
+text = "Selected number"
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/SettingsContainer"]
+margin_top = 18.0
+margin_right = 200.0
+margin_bottom = 144.0
+
+[node name="Numbers" type="GridContainer" parent="HBoxContainer/SettingsContainer/CenterContainer"]
+margin_left = 37.0
+margin_right = 163.0
+margin_bottom = 126.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 3
+
+[node name="NumberButton" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_right = 42.0
+margin_bottom = 42.0
+text = "1"
+
+[node name="NumberButton2" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 42.0
+margin_right = 84.0
+margin_bottom = 42.0
+text = "2"
+
+[node name="NumberButton3" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 84.0
+margin_right = 126.0
+margin_bottom = 42.0
+text = "3"
+
+[node name="NumberButton4" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_top = 42.0
+margin_right = 42.0
+margin_bottom = 84.0
+text = "4"
+
+[node name="NumberButton5" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 42.0
+margin_top = 42.0
+margin_right = 84.0
+margin_bottom = 84.0
+text = "5"
+
+[node name="NumberButton6" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 84.0
+margin_top = 42.0
+margin_right = 126.0
+margin_bottom = 84.0
+text = "6"
+
+[node name="NumberButton7" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_top = 84.0
+margin_right = 42.0
+margin_bottom = 126.0
+text = "7"
+
+[node name="NumberButton8" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 42.0
+margin_top = 84.0
+margin_right = 84.0
+margin_bottom = 126.0
+text = "8"
+
+[node name="NumberButton9" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
+margin_left = 84.0
+margin_top = 84.0
+margin_right = 126.0
+margin_bottom = 126.0
+text = "9"
+
+[node name="Buttons" type="HBoxContainer" parent="HBoxContainer/SettingsContainer"]
+margin_top = 148.0
+margin_right = 200.0
+margin_bottom = 179.0
+
+[node name="Clear" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
+margin_right = 98.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "Clear"
+
+[node name="Solve" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
+margin_left = 102.0
+margin_right = 200.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "Solve"
