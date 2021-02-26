@@ -1,13 +1,33 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GridButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://themes/main.theme" type="Theme" id=2]
 [ext_resource path="res://NumberButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://MainScreen.gd" type="Script" id=4]
+[ext_resource path="res://fonts/open_sans/OpenSans-Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.0509804, 0.0509804, 0.0509804, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.580392, 0.580392, 0.580392, 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+use_filter = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+use_filter = true
+font_data = ExtResource( 5 )
 
 [node name="MainScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 2 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -22,21 +42,22 @@ __meta__ = {
 
 [node name="BoardContainer" type="CenterContainer" parent="HBoxContainer"]
 margin_right = 600.0
-margin_bottom = 600.0
+margin_bottom = 603.0
 rect_min_size = Vector2( 600, 600 )
 size_flags_vertical = 5
 
 [node name="Background" type="ColorRect" parent="HBoxContainer/BoardContainer"]
+margin_top = 1.0
 margin_right = 600.0
-margin_bottom = 600.0
+margin_bottom = 601.0
 rect_min_size = Vector2( 600, 600 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="GridContainer" type="GridContainer" parent="HBoxContainer/BoardContainer"]
 margin_left = 3.0
-margin_top = 3.0
+margin_top = 4.0
 margin_right = 597.0
-margin_bottom = 597.0
+margin_bottom = 598.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 9
@@ -44,556 +65,734 @@ columns = 9
 [node name="GridButton" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_right = 66.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton2" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_right = 132.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton3" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_right = 198.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton6" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_right = 264.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton5" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_right = 330.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton4" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_right = 396.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton9" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_right = 462.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton8" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_right = 528.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton7" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_right = 594.0
 margin_bottom = 66.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton18" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 66.0
 margin_right = 66.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton17" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 66.0
 margin_right = 132.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton16" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 66.0
 margin_right = 198.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton15" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 66.0
 margin_right = 264.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton14" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 66.0
 margin_right = 330.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton13" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 66.0
 margin_right = 396.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton12" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 66.0
 margin_right = 462.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton11" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 66.0
 margin_right = 528.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton10" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 66.0
 margin_right = 594.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton27" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 132.0
 margin_right = 66.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton26" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 132.0
 margin_right = 132.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton25" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 132.0
 margin_right = 198.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton24" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 132.0
 margin_right = 264.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton23" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 132.0
 margin_right = 330.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton22" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 132.0
 margin_right = 396.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton21" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 132.0
 margin_right = 462.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton20" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 132.0
 margin_right = 528.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton19" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 132.0
 margin_right = 594.0
 margin_bottom = 198.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton54" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 198.0
 margin_right = 66.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton53" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 198.0
 margin_right = 132.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton52" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 198.0
 margin_right = 198.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton51" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 198.0
 margin_right = 264.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton50" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 198.0
 margin_right = 330.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton49" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 198.0
 margin_right = 396.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton48" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 198.0
 margin_right = 462.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton47" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 198.0
 margin_right = 528.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton46" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 198.0
 margin_right = 594.0
 margin_bottom = 264.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton45" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 264.0
 margin_right = 66.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton44" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 264.0
 margin_right = 132.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton43" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 264.0
 margin_right = 198.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton42" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 264.0
 margin_right = 264.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton41" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 264.0
 margin_right = 330.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton40" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 264.0
 margin_right = 396.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton39" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 264.0
 margin_right = 462.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton38" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 264.0
 margin_right = 528.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton37" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 264.0
 margin_right = 594.0
 margin_bottom = 330.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton36" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 330.0
 margin_right = 66.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton35" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 330.0
 margin_right = 132.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton34" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 330.0
 margin_right = 198.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton33" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 330.0
 margin_right = 264.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton32" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 330.0
 margin_right = 330.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton31" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 330.0
 margin_right = 396.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton30" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 330.0
 margin_right = 462.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton29" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 330.0
 margin_right = 528.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton28" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 330.0
 margin_right = 594.0
 margin_bottom = 396.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton81" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 396.0
 margin_right = 66.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton80" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 396.0
 margin_right = 132.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton79" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 396.0
 margin_right = 198.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton78" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 396.0
 margin_right = 264.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton77" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 396.0
 margin_right = 330.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton76" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 396.0
 margin_right = 396.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton75" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 396.0
 margin_right = 462.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton74" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 396.0
 margin_right = 528.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton73" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 396.0
 margin_right = 594.0
 margin_bottom = 462.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton72" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 462.0
 margin_right = 66.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton71" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 462.0
 margin_right = 132.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton70" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 462.0
 margin_right = 198.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton69" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 462.0
 margin_right = 264.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton68" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 462.0
 margin_right = 330.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton67" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 462.0
 margin_right = 396.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton66" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 462.0
 margin_right = 462.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton65" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 462.0
 margin_right = 528.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton64" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 462.0
 margin_right = 594.0
 margin_bottom = 528.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton63" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 528.0
 margin_right = 66.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton62" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 66.0
 margin_top = 528.0
 margin_right = 132.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton61" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_top = 528.0
 margin_right = 198.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton60" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 198.0
 margin_top = 528.0
 margin_right = 264.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton59" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 264.0
 margin_top = 528.0
 margin_right = 330.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton58" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 330.0
 margin_top = 528.0
 margin_right = 396.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton57" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 396.0
 margin_top = 528.0
 margin_right = 462.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton56" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 462.0
 margin_top = 528.0
 margin_right = 528.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
 
 [node name="GridButton55" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 528.0
 margin_top = 528.0
 margin_right = 594.0
 margin_bottom = 594.0
-rect_min_size = Vector2( 66, 66 )
+button_mask = 3
+text = ""
+
+[node name="Borders" type="GridContainer" parent="HBoxContainer/BoardContainer"]
+margin_top = 1.0
+margin_right = 600.0
+margin_bottom = 601.0
+rect_min_size = Vector2( 600, 600 )
+mouse_filter = 2
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_right = 200.0
+margin_bottom = 200.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect2" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 200.0
+margin_right = 400.0
+margin_bottom = 200.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect3" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 400.0
+margin_right = 600.0
+margin_bottom = 200.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect4" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_top = 200.0
+margin_right = 200.0
+margin_bottom = 400.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect5" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 200.0
+margin_top = 200.0
+margin_right = 400.0
+margin_bottom = 400.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect6" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 400.0
+margin_top = 200.0
+margin_right = 600.0
+margin_bottom = 400.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect7" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_top = 400.0
+margin_right = 200.0
+margin_bottom = 600.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect8" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 400.0
+margin_bottom = 600.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="ColorRect9" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
+margin_left = 400.0
+margin_top = 400.0
+margin_right = 600.0
+margin_bottom = 600.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
 
 [node name="SettingsContainer" type="VBoxContainer" parent="HBoxContainer"]
 margin_left = 600.0
 margin_right = 800.0
-margin_bottom = 600.0
+margin_bottom = 603.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="HBoxContainer/SettingsContainer"]
@@ -617,24 +816,29 @@ columns = 3
 [node name="NumberButton" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_right = 42.0
 margin_bottom = 42.0
+custom_fonts/font = SubResource( 1 )
+pressed = true
 text = "1"
 
 [node name="NumberButton2" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 42.0
 margin_right = 84.0
 margin_bottom = 42.0
+custom_fonts/font = SubResource( 1 )
 text = "2"
 
 [node name="NumberButton3" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 84.0
 margin_right = 126.0
 margin_bottom = 42.0
+custom_fonts/font = SubResource( 1 )
 text = "3"
 
 [node name="NumberButton4" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_top = 42.0
 margin_right = 42.0
 margin_bottom = 84.0
+custom_fonts/font = SubResource( 1 )
 text = "4"
 
 [node name="NumberButton5" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
@@ -642,6 +846,7 @@ margin_left = 42.0
 margin_top = 42.0
 margin_right = 84.0
 margin_bottom = 84.0
+custom_fonts/font = SubResource( 1 )
 text = "5"
 
 [node name="NumberButton6" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
@@ -649,12 +854,14 @@ margin_left = 84.0
 margin_top = 42.0
 margin_right = 126.0
 margin_bottom = 84.0
+custom_fonts/font = SubResource( 1 )
 text = "6"
 
 [node name="NumberButton7" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_top = 84.0
 margin_right = 42.0
 margin_bottom = 126.0
+custom_fonts/font = SubResource( 1 )
 text = "7"
 
 [node name="NumberButton8" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
@@ -662,6 +869,7 @@ margin_left = 42.0
 margin_top = 84.0
 margin_right = 84.0
 margin_bottom = 126.0
+custom_fonts/font = SubResource( 1 )
 text = "8"
 
 [node name="NumberButton9" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
@@ -669,22 +877,31 @@ margin_left = 84.0
 margin_top = 84.0
 margin_right = 126.0
 margin_bottom = 126.0
+custom_fonts/font = SubResource( 1 )
 text = "9"
 
 [node name="Buttons" type="HBoxContainer" parent="HBoxContainer/SettingsContainer"]
 margin_top = 148.0
 margin_right = 200.0
-margin_bottom = 179.0
+margin_bottom = 173.0
 
 [node name="Clear" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
 margin_right = 98.0
-margin_bottom = 31.0
+margin_bottom = 25.0
+focus_mode = 0
 size_flags_horizontal = 3
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 0
 text = "Clear"
 
 [node name="Solve" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
 margin_left = 102.0
 margin_right = 200.0
-margin_bottom = 31.0
+margin_bottom = 25.0
+focus_mode = 0
 size_flags_horizontal = 3
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 0
 text = "Solve"
+[connection signal="pressed" from="HBoxContainer/SettingsContainer/Buttons/Clear" to="." method="_on_Clear_pressed"]
+[connection signal="pressed" from="HBoxContainer/SettingsContainer/Buttons/Solve" to="." method="_on_Solve_pressed"]
