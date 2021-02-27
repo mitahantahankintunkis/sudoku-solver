@@ -65,6 +65,10 @@ columns = 9
 [node name="GridButton" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_right = 66.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -72,13 +76,21 @@ text = ""
 margin_left = 66.0
 margin_right = 132.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
-text = ""
+text = "1"
 
 [node name="GridButton3" parent="HBoxContainer/BoardContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 132.0
 margin_right = 198.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -86,6 +98,10 @@ text = ""
 margin_left = 198.0
 margin_right = 264.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -93,6 +109,10 @@ text = ""
 margin_left = 264.0
 margin_right = 330.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -100,6 +120,10 @@ text = ""
 margin_left = 330.0
 margin_right = 396.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -107,6 +131,10 @@ text = ""
 margin_left = 396.0
 margin_right = 462.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -114,6 +142,10 @@ text = ""
 margin_left = 462.0
 margin_right = 528.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -121,6 +153,10 @@ text = ""
 margin_left = 528.0
 margin_right = 594.0
 margin_bottom = 66.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -128,6 +164,10 @@ text = ""
 margin_top = 66.0
 margin_right = 66.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -136,6 +176,10 @@ margin_left = 66.0
 margin_top = 66.0
 margin_right = 132.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -144,6 +188,10 @@ margin_left = 132.0
 margin_top = 66.0
 margin_right = 198.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -152,6 +200,10 @@ margin_left = 198.0
 margin_top = 66.0
 margin_right = 264.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -160,6 +212,10 @@ margin_left = 264.0
 margin_top = 66.0
 margin_right = 330.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -168,6 +224,10 @@ margin_left = 330.0
 margin_top = 66.0
 margin_right = 396.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -176,6 +236,10 @@ margin_left = 396.0
 margin_top = 66.0
 margin_right = 462.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -184,6 +248,10 @@ margin_left = 462.0
 margin_top = 66.0
 margin_right = 528.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -192,6 +260,10 @@ margin_left = 528.0
 margin_top = 66.0
 margin_right = 594.0
 margin_bottom = 132.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -199,6 +271,10 @@ text = ""
 margin_top = 132.0
 margin_right = 66.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -207,6 +283,10 @@ margin_left = 66.0
 margin_top = 132.0
 margin_right = 132.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -215,6 +295,10 @@ margin_left = 132.0
 margin_top = 132.0
 margin_right = 198.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -223,6 +307,10 @@ margin_left = 198.0
 margin_top = 132.0
 margin_right = 264.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -231,6 +319,10 @@ margin_left = 264.0
 margin_top = 132.0
 margin_right = 330.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -239,6 +331,10 @@ margin_left = 330.0
 margin_top = 132.0
 margin_right = 396.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -247,6 +343,10 @@ margin_left = 396.0
 margin_top = 132.0
 margin_right = 462.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -255,6 +355,10 @@ margin_left = 462.0
 margin_top = 132.0
 margin_right = 528.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -263,6 +367,10 @@ margin_left = 528.0
 margin_top = 132.0
 margin_right = 594.0
 margin_bottom = 198.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -270,6 +378,10 @@ text = ""
 margin_top = 198.0
 margin_right = 66.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -278,6 +390,10 @@ margin_left = 66.0
 margin_top = 198.0
 margin_right = 132.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -286,6 +402,10 @@ margin_left = 132.0
 margin_top = 198.0
 margin_right = 198.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -294,6 +414,10 @@ margin_left = 198.0
 margin_top = 198.0
 margin_right = 264.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -302,6 +426,10 @@ margin_left = 264.0
 margin_top = 198.0
 margin_right = 330.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -310,6 +438,10 @@ margin_left = 330.0
 margin_top = 198.0
 margin_right = 396.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -318,6 +450,10 @@ margin_left = 396.0
 margin_top = 198.0
 margin_right = 462.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -326,6 +462,10 @@ margin_left = 462.0
 margin_top = 198.0
 margin_right = 528.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -334,6 +474,10 @@ margin_left = 528.0
 margin_top = 198.0
 margin_right = 594.0
 margin_bottom = 264.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -341,6 +485,10 @@ text = ""
 margin_top = 264.0
 margin_right = 66.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -349,6 +497,10 @@ margin_left = 66.0
 margin_top = 264.0
 margin_right = 132.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -357,6 +509,10 @@ margin_left = 132.0
 margin_top = 264.0
 margin_right = 198.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -365,6 +521,10 @@ margin_left = 198.0
 margin_top = 264.0
 margin_right = 264.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -373,6 +533,10 @@ margin_left = 264.0
 margin_top = 264.0
 margin_right = 330.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -381,6 +545,10 @@ margin_left = 330.0
 margin_top = 264.0
 margin_right = 396.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -389,6 +557,10 @@ margin_left = 396.0
 margin_top = 264.0
 margin_right = 462.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -397,6 +569,10 @@ margin_left = 462.0
 margin_top = 264.0
 margin_right = 528.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -405,6 +581,10 @@ margin_left = 528.0
 margin_top = 264.0
 margin_right = 594.0
 margin_bottom = 330.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -412,6 +592,10 @@ text = ""
 margin_top = 330.0
 margin_right = 66.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -420,6 +604,10 @@ margin_left = 66.0
 margin_top = 330.0
 margin_right = 132.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -428,6 +616,10 @@ margin_left = 132.0
 margin_top = 330.0
 margin_right = 198.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -436,6 +628,10 @@ margin_left = 198.0
 margin_top = 330.0
 margin_right = 264.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -444,6 +640,10 @@ margin_left = 264.0
 margin_top = 330.0
 margin_right = 330.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -452,6 +652,10 @@ margin_left = 330.0
 margin_top = 330.0
 margin_right = 396.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -460,6 +664,10 @@ margin_left = 396.0
 margin_top = 330.0
 margin_right = 462.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -468,6 +676,10 @@ margin_left = 462.0
 margin_top = 330.0
 margin_right = 528.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -476,6 +688,10 @@ margin_left = 528.0
 margin_top = 330.0
 margin_right = 594.0
 margin_bottom = 396.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -483,6 +699,10 @@ text = ""
 margin_top = 396.0
 margin_right = 66.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -491,6 +711,10 @@ margin_left = 66.0
 margin_top = 396.0
 margin_right = 132.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -499,6 +723,10 @@ margin_left = 132.0
 margin_top = 396.0
 margin_right = 198.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -507,6 +735,10 @@ margin_left = 198.0
 margin_top = 396.0
 margin_right = 264.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -515,6 +747,10 @@ margin_left = 264.0
 margin_top = 396.0
 margin_right = 330.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -523,6 +759,10 @@ margin_left = 330.0
 margin_top = 396.0
 margin_right = 396.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -531,6 +771,10 @@ margin_left = 396.0
 margin_top = 396.0
 margin_right = 462.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -539,6 +783,10 @@ margin_left = 462.0
 margin_top = 396.0
 margin_right = 528.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -547,6 +795,10 @@ margin_left = 528.0
 margin_top = 396.0
 margin_right = 594.0
 margin_bottom = 462.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -554,6 +806,10 @@ text = ""
 margin_top = 462.0
 margin_right = 66.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -562,6 +818,10 @@ margin_left = 66.0
 margin_top = 462.0
 margin_right = 132.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -570,6 +830,10 @@ margin_left = 132.0
 margin_top = 462.0
 margin_right = 198.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -578,6 +842,10 @@ margin_left = 198.0
 margin_top = 462.0
 margin_right = 264.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -586,6 +854,10 @@ margin_left = 264.0
 margin_top = 462.0
 margin_right = 330.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -594,6 +866,10 @@ margin_left = 330.0
 margin_top = 462.0
 margin_right = 396.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -602,6 +878,10 @@ margin_left = 396.0
 margin_top = 462.0
 margin_right = 462.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -610,6 +890,10 @@ margin_left = 462.0
 margin_top = 462.0
 margin_right = 528.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -618,6 +902,10 @@ margin_left = 528.0
 margin_top = 462.0
 margin_right = 594.0
 margin_bottom = 528.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -625,6 +913,10 @@ text = ""
 margin_top = 528.0
 margin_right = 66.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -633,6 +925,10 @@ margin_left = 66.0
 margin_top = 528.0
 margin_right = 132.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -641,6 +937,10 @@ margin_left = 132.0
 margin_top = 528.0
 margin_right = 198.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -649,6 +949,10 @@ margin_left = 198.0
 margin_top = 528.0
 margin_right = 264.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -657,6 +961,10 @@ margin_left = 264.0
 margin_top = 528.0
 margin_right = 330.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -665,6 +973,10 @@ margin_left = 330.0
 margin_top = 528.0
 margin_right = 396.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -673,6 +985,10 @@ margin_left = 396.0
 margin_top = 528.0
 margin_right = 462.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -681,6 +997,10 @@ margin_left = 462.0
 margin_top = 528.0
 margin_right = 528.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -689,6 +1009,10 @@ margin_left = 528.0
 margin_top = 528.0
 margin_right = 594.0
 margin_bottom = 594.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 button_mask = 3
 text = ""
 
@@ -712,6 +1036,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect2" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 200.0
@@ -721,6 +1048,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect3" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 400.0
@@ -730,6 +1060,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect4" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_top = 200.0
@@ -739,6 +1072,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect5" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 200.0
@@ -749,6 +1085,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect6" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 400.0
@@ -759,6 +1098,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect7" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_top = 400.0
@@ -768,6 +1110,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect8" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 200.0
@@ -778,6 +1123,9 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect9" type="Panel" parent="HBoxContainer/BoardContainer/Borders"]
 margin_left = 400.0
@@ -788,26 +1136,34 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+margin_left = 600.0
+margin_right = 604.0
+margin_bottom = 603.0
 
 [node name="SettingsContainer" type="VBoxContainer" parent="HBoxContainer"]
-margin_left = 600.0
+margin_left = 604.0
 margin_right = 800.0
 margin_bottom = 603.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="HBoxContainer/SettingsContainer"]
-margin_right = 200.0
+margin_right = 196.0
 margin_bottom = 14.0
 text = "Selected number"
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/SettingsContainer"]
 margin_top = 18.0
-margin_right = 200.0
+margin_right = 196.0
 margin_bottom = 144.0
 
 [node name="Numbers" type="GridContainer" parent="HBoxContainer/SettingsContainer/CenterContainer"]
-margin_left = 37.0
-margin_right = 163.0
+margin_left = 35.0
+margin_right = 161.0
 margin_bottom = 126.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
@@ -882,11 +1238,11 @@ text = "9"
 
 [node name="Buttons" type="HBoxContainer" parent="HBoxContainer/SettingsContainer"]
 margin_top = 148.0
-margin_right = 200.0
+margin_right = 196.0
 margin_bottom = 173.0
 
 [node name="Clear" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
-margin_right = 98.0
+margin_right = 96.0
 margin_bottom = 25.0
 focus_mode = 0
 size_flags_horizontal = 3
@@ -895,8 +1251,8 @@ enabled_focus_mode = 0
 text = "Clear"
 
 [node name="Solve" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
-margin_left = 102.0
-margin_right = 200.0
+margin_left = 100.0
+margin_right = 196.0
 margin_bottom = 25.0
 focus_mode = 0
 size_flags_horizontal = 3
