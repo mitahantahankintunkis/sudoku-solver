@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://fonts/open_sans/OpenSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI.gd" type="Script" id=2]
 [ext_resource path="res://themes/grid.theme" type="Theme" id=4]
 [ext_resource path="res://themes/gridbutton_dark.tres" type="StyleBox" id=5]
 
@@ -53,6 +54,7 @@ Button/styles/pressed = null
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = SubResource( 1 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -86,6 +88,7 @@ margin_right = 66.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button2" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -93,6 +96,7 @@ margin_right = 132.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button3" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -100,6 +104,7 @@ margin_right = 198.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button4" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -108,6 +113,7 @@ margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button5" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -116,6 +122,7 @@ margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button6" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -124,6 +131,7 @@ margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button7" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -131,6 +139,7 @@ margin_right = 462.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button8" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -138,6 +147,7 @@ margin_right = 528.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button9" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -145,6 +155,7 @@ margin_right = 594.0
 margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button18" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 66.0
@@ -152,6 +163,7 @@ margin_right = 66.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button17" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -160,6 +172,7 @@ margin_right = 132.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button16" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -168,6 +181,7 @@ margin_right = 198.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button15" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -177,7 +191,7 @@ margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
-text = "0"
+button_mask = 3
 
 [node name="Button14" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -187,6 +201,7 @@ margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button13" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -196,6 +211,7 @@ margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button12" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -204,6 +220,7 @@ margin_right = 462.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button11" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -212,6 +229,7 @@ margin_right = 528.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button10" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -220,6 +238,7 @@ margin_right = 594.0
 margin_bottom = 132.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button27" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 132.0
@@ -227,6 +246,7 @@ margin_right = 66.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button26" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -235,6 +255,7 @@ margin_right = 132.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button25" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -243,6 +264,7 @@ margin_right = 198.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button24" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -252,6 +274,7 @@ margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button23" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -261,6 +284,7 @@ margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button22" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -270,6 +294,7 @@ margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button21" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -278,6 +303,7 @@ margin_right = 462.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button20" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -286,6 +312,7 @@ margin_right = 528.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button19" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -294,6 +321,7 @@ margin_right = 594.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button54" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 198.0
@@ -302,6 +330,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button53" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -311,6 +340,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button52" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -320,6 +350,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button51" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -328,6 +359,7 @@ margin_right = 264.0
 margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button50" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -336,6 +368,7 @@ margin_right = 330.0
 margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button49" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -344,6 +377,7 @@ margin_right = 396.0
 margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button48" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -353,6 +387,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button47" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -362,6 +397,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button46" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -371,6 +407,7 @@ margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button45" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 264.0
@@ -379,6 +416,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button44" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -388,6 +426,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button43" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -397,6 +436,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button42" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -405,6 +445,7 @@ margin_right = 264.0
 margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button41" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -413,6 +454,7 @@ margin_right = 330.0
 margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button40" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -421,6 +463,7 @@ margin_right = 396.0
 margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button39" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -430,6 +473,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button38" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -439,6 +483,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button37" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -448,6 +493,7 @@ margin_bottom = 330.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button36" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 330.0
@@ -456,6 +502,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button35" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -465,6 +512,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button34" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -474,6 +522,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button33" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -482,6 +531,7 @@ margin_right = 264.0
 margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button32" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -490,6 +540,7 @@ margin_right = 330.0
 margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button31" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -498,6 +549,7 @@ margin_right = 396.0
 margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button30" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -507,6 +559,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button29" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -516,6 +569,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button28" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -525,6 +579,7 @@ margin_bottom = 396.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button81" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 396.0
@@ -532,6 +587,7 @@ margin_right = 66.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button80" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -540,6 +596,7 @@ margin_right = 132.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button79" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -548,6 +605,7 @@ margin_right = 198.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button78" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -557,6 +615,7 @@ margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button77" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -566,6 +625,7 @@ margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button76" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -575,6 +635,7 @@ margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button75" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -583,6 +644,7 @@ margin_right = 462.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button74" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -591,6 +653,7 @@ margin_right = 528.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button73" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -599,6 +662,7 @@ margin_right = 594.0
 margin_bottom = 462.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button72" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 462.0
@@ -606,6 +670,7 @@ margin_right = 66.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button71" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -614,6 +679,7 @@ margin_right = 132.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button70" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -622,6 +688,7 @@ margin_right = 198.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button69" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -631,6 +698,7 @@ margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button68" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -640,6 +708,7 @@ margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button67" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -649,6 +718,7 @@ margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button66" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -657,6 +727,7 @@ margin_right = 462.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button65" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -665,6 +736,7 @@ margin_right = 528.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button64" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -673,6 +745,7 @@ margin_right = 594.0
 margin_bottom = 528.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button63" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_top = 528.0
@@ -680,6 +753,7 @@ margin_right = 66.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button62" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 66.0
@@ -688,6 +762,7 @@ margin_right = 132.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button61" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 132.0
@@ -696,6 +771,7 @@ margin_right = 198.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button60" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 198.0
@@ -705,6 +781,7 @@ margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button59" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 264.0
@@ -714,6 +791,7 @@ margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button58" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 330.0
@@ -723,6 +801,7 @@ margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/normal = ExtResource( 5 )
+button_mask = 3
 
 [node name="Button57" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 396.0
@@ -731,6 +810,7 @@ margin_right = 462.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button56" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 462.0
@@ -739,6 +819,7 @@ margin_right = 528.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="Button55" type="Button" parent="VBoxContainer/CenterContainer/GridContainer"]
 margin_left = 528.0
@@ -747,6 +828,7 @@ margin_right = 594.0
 margin_bottom = 594.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+button_mask = 3
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
 margin_top = 624.0
@@ -771,3 +853,5 @@ margin_right = 260.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 128, 32 )
 text = "Solve"
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Clear" to="." method="_on_Clear_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Solve" to="." method="_on_Solve_pressed"]
