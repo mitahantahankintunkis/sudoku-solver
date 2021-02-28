@@ -12,12 +12,31 @@ var grid = []
 var hover_i = 0
 var hover_color = palette["hover"]
 var button_colors = []
+var row_sets = []
+var col_sets = []
+var grid_sets = []
 
 
 func _ready():
 	# Initializes grid
 	for y in grid_buttons.size():
 		grid.append(0)
+
+	grid = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 8, 0, 0, 0, 0, 2, 5, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 5, 0, 0, 7, 0, 0, 0, 0, 0, 0, 3, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 7, 0, 0, 0, 0, 9, 0, 0, 6, 0, 2, 0]
+
+	for i in 9:
+		row_sets.append([0,0,0,0,0,0,0,0,0,0])
+		col_sets.append([0,0,0,0,0,0,0,0,0,0])
+		grid_sets.append([0,0,0,0,0,0,0,0,0,0])
+
+	for i in grid.size():
+		var row_i = int(i / 9)
+		var col_i = i % 9
+		var grid_i = int(int(i / 9) / 3) * 3 + int((i % 9) / 3)
+
+		row_sets[row_i][grid[i]] = 1
+		col_sets[col_i][grid[i]] = 1
+		grid_sets[grid_i][grid[i]] = 1
 
 	# Initializes button colors
 	for i in grid_buttons.size():
@@ -30,20 +49,38 @@ func _ready():
 		grid_buttons[i].connect("mouse_exited", self, "_on_grid_button_mouse_exit", [i])
 
 
+var solving = false
+var stack = [0]
+
 func _process(_delta):
 	for key in range(1, 10):
 		if Input.is_action_pressed(str(key)):
 			selected_number = key
 			_on_grid_button_mouse_enter(hover_i)
 			break
+	
+	if solving:
+		var i = stack.pop_back()
+		if i >= grid.size():
+			solving = false
+			return
+		
+		if grid[i] > 0:
+			stack.push_back(i + 1)
+			return
+		
+		for j in range(1, 10):
+			grid[i] = j
+			if _is_board_valid_after_changes(i):
+				stack.push(i + 1)
+		grid[i] = 0
 
 
 func _on_grid_button_pressed(i):
 	button_colors[i] = palette["normal"]
-	print("asdf")
+
 	if Input.is_mouse_button_pressed(2):
 		grid[i] = 0
-		print("right")
 	else:
 		grid[i] = selected_number
 		grid_buttons[i].set("custom_colors/font_color_hover", button_colors[i])
@@ -108,6 +145,30 @@ func _is_board_valid():
 	return true
 
 
+func _update_cell(i, value):
+	var cur_value = grid[i]
+	var row_i = int(i / 9)
+	var col_i = i % 9
+	var grid_i = int(int(i / 9) / 3) * 3 + int((i % 9) / 3)
+
+	if value != 0:
+		if row_sets[row_i][value] > 0: return false
+		if col_sets[col_i][value] > 0: return false
+		if grid_sets[grid_i][value] > 0: return false
+
+	row_sets[row_i][cur_value] = 0
+	col_sets[col_i][cur_value] = 0
+	grid_sets[grid_i][cur_value] = 0
+
+	row_sets[row_i][value] = 1
+	col_sets[col_i][value] = 1
+	grid_sets[grid_i][value] = 1
+
+	grid[i] = value
+
+	return true
+
+
 func _solve_recursive(i=0):
 	if i >= grid_buttons.size():
 		return true
@@ -118,14 +179,19 @@ func _solve_recursive(i=0):
 	button_colors[i] = palette["generated"]
 
 	for j in range(1, 10):
-		grid[i] = j
-
-		if _is_board_valid_after_changes(i):
+		if _update_cell(i, j):
 			if _solve_recursive(i + 1):
 				return true
 
-	grid[i] = 0
+	_update_cell(i, 0)
 	return false
+
+#		if _is_board_valid_after_changes(i):
+#			if _solve_recursive(i + 1):
+#				return true
+
+#	grid[i] = 0
+#	return false
 
 
 func _on_Clear_pressed():
@@ -144,6 +210,8 @@ func _on_Solve_pressed():
 	if not _is_board_valid():
 		print("Invalid board")
 	else:
+		solving = true
+		return
 		if not _solve_recursive():
 			print("Could not solve")
 
