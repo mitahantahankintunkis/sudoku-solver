@@ -11,7 +11,7 @@ func solve():
 
 
 # Solves the sudoku using backtracking without any optimization.
-# Is too slow with GDScript
+# Is too slow with GDScript, takes around 70s for harder puzzles
 func _recurse(depth=0):
 	if depth >= grid.size(): return true
 	if grid[depth] != 0: return _recurse(depth + 1)

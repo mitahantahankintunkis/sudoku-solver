@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://fonts/open_sans/OpenSans-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://themes/grid.theme" type="Theme" id=4]
 [ext_resource path="res://themes/gridbutton_dark.tres" type="StyleBox" id=5]
 [ext_resource path="res://Solver.gd" type="Script" id=6]
+[ext_resource path="res://Smartish.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 18
@@ -942,5 +943,8 @@ script = ExtResource( 6 )
 
 [node name="Naive" type="Node" parent="Solvers"]
 script = ExtResource( 3 )
+
+[node name="Smartish" type="Node" parent="Solvers"]
+script = ExtResource( 7 )
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Clear" to="." method="_on_Clear_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Solve" to="." method="_on_Solve_pressed"]

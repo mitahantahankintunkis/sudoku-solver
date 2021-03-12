@@ -77,12 +77,25 @@ func _on_Solve_pressed():
 		else:
 			grid_buttons[i].set("custom_colors/font_color", palette["generated"])
 
-	var solver = $Solvers/Naive
+#	var s0 = $Solvers/Naive
+#	var s1 = $Solvers/Smartish
+#	s0.solve()
+#	s1.solve()
+#	print(s0.grid)
+#	print(s1.grid)
+#	print(s0._is_board_valid())
+#	print(s1._is_board_valid())
+#	for i in grid_buttons.size():
+#		assert(s0.grid[i] == s1.grid[i])
+
+#	var solver = $Solvers/Naive
+	var solver = $Solvers/Smartish
 	
+	var start_time = OS.get_unix_time()
 	if not solver.solve():
 		print("Could not solve")
 	else:
 		for i in grid_buttons.size():
 			var v = solver.grid[i]
 			grid_buttons[i].text = str(v) if v != 0 else ""
-	print(solver.grid)
+	print("Solver took %s seconds, solved: %s" % [(OS.get_unix_time() - start_time), solver._is_board_valid()])
