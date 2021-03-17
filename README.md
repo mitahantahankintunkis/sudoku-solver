@@ -1,2 +1,3 @@
 # sudoku-solver
-Sudoku solver implemented using Godot
+A simple backtracking sudoku solver implemented using Godot
+![gif](docs/example.gif)
