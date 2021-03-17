@@ -1,15 +1,15 @@
 extends Node
 
-var grid = []
 onready var buttons = get_node("/root/UI/VBoxContainer/CenterContainer/GridContainer").get_children()
+var grid = []
 var mask = []
 var matrix = []
+
+# Contains binary values which represents what values are used for
+# each section of the grid
 var row_masks = []
 var col_masks = []
 var sec_masks = []
-#var row_masks = [1022,1022,1022,1022,1022,1022,1022,1022,1022]
-#var col_masks = [1022,1022,1022,1022,1022,1022,1022,1022,1022]
-#var sec_masks = [1022,1022,1022,1022,1022,1022,1022,1022,1022]
 
 func _ready():
 	for button in buttons:
@@ -29,6 +29,7 @@ func _solve():
 		grid[i] = int(buttons[i].text)
 
 
+# Returns false if the board contains invalid values
 func _is_board_valid():
 	for i in grid.size():
 		if grid[i] != 0:
@@ -61,15 +62,7 @@ func _valid_numbers(i):
 
 	return valid
 
-
-func bin(a):
-	var r = ""
-	while a:
-		r = str(a & 1) + r
-		a >>= 1
-	return r
-
-
+# Updates valid values for each cell contained in 'matrix'
 func _update_matrix():
 	for i in row_masks.size():
 		row_masks[i] = 0b1111111110
@@ -82,7 +75,7 @@ func _update_matrix():
 	for i in grid.size():
 		var row = int(i / 9)
 		var col = i % 9
-		var sec_offset = int((row * 3) / 9) * 27 + ((row * 3) % 9)
+		var sec_offset = int((row * 3) / 9) * 3 * 9 + ((row * 3) % 9)
 		row_masks[row] &= mask[row * 9 + col]
 		col_masks[row] &= mask[col * 9 + row]
 		sec_masks[row] &= mask[sec_offset + int(col / 3) * 9 + (col % 3)]

@@ -6,7 +6,7 @@
 [ext_resource path="res://MainScreen.gd" type="Script" id=4]
 [ext_resource path="res://fonts/open_sans/OpenSans-Regular.ttf" type="DynamicFontData" id=5]
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0509804, 0.0509804, 0.0509804, 0 )
 border_width_left = 2
 border_width_top = 2
@@ -14,12 +14,12 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color( 0.580392, 0.580392, 0.580392, 1 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 28
 use_filter = true
 font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 use_filter = true
 font_data = ExtResource( 5 )
 
@@ -42,22 +42,22 @@ __meta__ = {
 
 [node name="BoardContainer" type="CenterContainer" parent="HBoxContainer"]
 margin_right = 600.0
-margin_bottom = 603.0
+margin_bottom = 664.0
 rect_min_size = Vector2( 600, 600 )
 size_flags_vertical = 5
 
 [node name="Background" type="ColorRect" parent="HBoxContainer/BoardContainer"]
-margin_top = 1.0
+margin_top = 32.0
 margin_right = 600.0
-margin_bottom = 601.0
+margin_bottom = 632.0
 rect_min_size = Vector2( 600, 600 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="GridContainer" type="GridContainer" parent="HBoxContainer/BoardContainer"]
 margin_left = 3.0
-margin_top = 4.0
+margin_top = 35.0
 margin_right = 597.0
-margin_bottom = 598.0
+margin_bottom = 629.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 9
@@ -1017,9 +1017,9 @@ button_mask = 3
 text = ""
 
 [node name="Borders" type="GridContainer" parent="HBoxContainer/BoardContainer"]
-margin_top = 1.0
+margin_top = 32.0
 margin_right = 600.0
-margin_bottom = 601.0
+margin_bottom = 632.0
 rect_min_size = Vector2( 600, 600 )
 mouse_filter = 2
 custom_constants/vseparation = 0
@@ -1035,7 +1035,7 @@ margin_bottom = 200.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1047,7 +1047,7 @@ margin_bottom = 200.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1059,7 +1059,7 @@ margin_bottom = 200.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1071,7 +1071,7 @@ margin_bottom = 400.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1084,7 +1084,7 @@ margin_bottom = 400.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1097,7 +1097,7 @@ margin_bottom = 400.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1109,7 +1109,7 @@ margin_bottom = 600.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1122,7 +1122,7 @@ margin_bottom = 600.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1135,7 +1135,7 @@ margin_bottom = 600.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1143,120 +1143,119 @@ __meta__ = {
 [node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
 margin_left = 600.0
 margin_right = 604.0
-margin_bottom = 603.0
+margin_bottom = 664.0
 
 [node name="SettingsContainer" type="VBoxContainer" parent="HBoxContainer"]
 margin_left = 604.0
-margin_right = 800.0
-margin_bottom = 603.0
+margin_right = 730.0
+margin_bottom = 664.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="HBoxContainer/SettingsContainer"]
-margin_right = 196.0
+margin_right = 126.0
 margin_bottom = 14.0
 text = "Selected number"
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/SettingsContainer"]
 margin_top = 18.0
-margin_right = 196.0
-margin_bottom = 144.0
+margin_right = 126.0
+margin_bottom = 153.0
 
 [node name="Numbers" type="GridContainer" parent="HBoxContainer/SettingsContainer/CenterContainer"]
-margin_left = 35.0
-margin_right = 161.0
-margin_bottom = 126.0
+margin_right = 126.0
+margin_bottom = 135.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 3
 
 [node name="NumberButton" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_right = 42.0
-margin_bottom = 42.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 2 )
 pressed = true
 text = "1"
 
 [node name="NumberButton2" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 42.0
 margin_right = 84.0
-margin_bottom = 42.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 2 )
 text = "2"
 
 [node name="NumberButton3" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 84.0
 margin_right = 126.0
-margin_bottom = 42.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 2 )
 text = "3"
 
 [node name="NumberButton4" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
-margin_top = 42.0
+margin_top = 45.0
 margin_right = 42.0
-margin_bottom = 84.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 2 )
 text = "4"
 
 [node name="NumberButton5" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 42.0
-margin_top = 42.0
+margin_top = 45.0
 margin_right = 84.0
-margin_bottom = 84.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 2 )
 text = "5"
 
 [node name="NumberButton6" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 84.0
-margin_top = 42.0
+margin_top = 45.0
 margin_right = 126.0
-margin_bottom = 84.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 2 )
 text = "6"
 
 [node name="NumberButton7" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
-margin_top = 84.0
+margin_top = 90.0
 margin_right = 42.0
-margin_bottom = 126.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 135.0
+custom_fonts/font = SubResource( 2 )
 text = "7"
 
 [node name="NumberButton8" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 42.0
-margin_top = 84.0
+margin_top = 90.0
 margin_right = 84.0
-margin_bottom = 126.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 135.0
+custom_fonts/font = SubResource( 2 )
 text = "8"
 
 [node name="NumberButton9" parent="HBoxContainer/SettingsContainer/CenterContainer/Numbers" instance=ExtResource( 3 )]
 margin_left = 84.0
-margin_top = 84.0
+margin_top = 90.0
 margin_right = 126.0
-margin_bottom = 126.0
-custom_fonts/font = SubResource( 1 )
+margin_bottom = 135.0
+custom_fonts/font = SubResource( 2 )
 text = "9"
 
 [node name="Buttons" type="HBoxContainer" parent="HBoxContainer/SettingsContainer"]
-margin_top = 148.0
-margin_right = 196.0
-margin_bottom = 173.0
+margin_top = 157.0
+margin_right = 126.0
+margin_bottom = 186.0
 
 [node name="Clear" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
-margin_right = 96.0
-margin_bottom = 25.0
+margin_right = 61.0
+margin_bottom = 29.0
 focus_mode = 0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 enabled_focus_mode = 0
 text = "Clear"
 
 [node name="Solve" type="Button" parent="HBoxContainer/SettingsContainer/Buttons"]
-margin_left = 100.0
-margin_right = 196.0
-margin_bottom = 25.0
+margin_left = 65.0
+margin_right = 126.0
+margin_bottom = 29.0
 focus_mode = 0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 enabled_focus_mode = 0
 text = "Solve"
 [connection signal="pressed" from="HBoxContainer/SettingsContainer/Buttons/Clear" to="." method="_on_Clear_pressed"]
